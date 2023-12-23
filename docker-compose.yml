@@ -1,0 +1,9 @@
+version: "3"
+services:
+
+  client:
+    build: ./telegram-booking_client
+    command: nest start
+
+  server:
+    
