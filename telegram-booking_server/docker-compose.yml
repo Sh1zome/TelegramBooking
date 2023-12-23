@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  telegrambooking_server:
+    image: ${DOCKER_REGISTRY-}telegrambookingserver
+    build:
+      context: .
+      dockerfile: TelegramBooking_Server/Dockerfile

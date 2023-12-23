@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PzdK0BqDTOZSrUS0+dZeKP2fXgITZ/SxLy/s3MnQ8VY=",
+  "Source": "TelegramBooking_Server",
+  "BasePath": "_content/TelegramBooking_Server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
