@@ -2,8 +2,15 @@ version: "3"
 services:
 
   client:
+  image: ${DOCKER_REGISTRY-}telegram-booking_client
     build: ./telegram-booking_client
     command: nest start
+      context: .
+      dockerfile: telegram-booking_client/Dockerfile
 
   server:
+    image: ${DOCKER_REGISTRY-}telegram-booking_server
+     build: ./telegram-booking_server
+       context: .
+       dockerfile: telegram-booking_server/Dockerfile
     

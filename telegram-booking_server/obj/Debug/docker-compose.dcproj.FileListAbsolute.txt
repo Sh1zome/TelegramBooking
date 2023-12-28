@@ -1,0 +1,13 @@
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\obj\Debug\docker-compose.dcproj.CoreCompileInputs.cache
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.deps.json
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.runtimeconfig.json
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\appsettings.Development.json
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\appsettings.json
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.exe
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.pdb
+D:\AlefStudio\TelegramBooking\telegram-booking_server\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
+D:\AlefStudio\TelegramBooking\telegram-booking_server\obj\Debug\docker-compose.dcproj.CopyComplete

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\artem\\OneDrive\\Рабочий стол\\i21s592\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj": {}
+    "D:\\AlefStudio\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj": {}
   },
   "projects": {
-    "C:\\Users\\artem\\OneDrive\\Рабочий стол\\i21s592\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj": {
+    "D:\\AlefStudio\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\artem\\OneDrive\\Рабочий стол\\i21s592\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj",
+        "projectUniqueName": "D:\\AlefStudio\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj",
         "projectName": "TelegramBooking_Server",
-        "projectPath": "C:\\Users\\artem\\OneDrive\\Рабочий стол\\i21s592\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj",
-        "packagesPath": "C:\\Users\\artem\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\artem\\OneDrive\\Рабочий стол\\i21s592\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\obj\\",
+        "projectPath": "D:\\AlefStudio\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\TelegramBooking_Server.csproj",
+        "packagesPath": "C:\\Users\\nikit\\.nuget\\packages\\",
+        "outputPath": "D:\\AlefStudio\\TelegramBooking\\telegram-booking_server\\TelegramBooking_Server\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Users\\artem\\AppData\\Roaming\\Godot\\mono\\GodotNuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Users\\artem\\AppData\\Roaming\\NuGet\\config\\Godot.Offline.Config",
+          "C:\\Users\\nikit\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[7.0.14, )"
             },
+            "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
+              "target": "Package",
+              "version": "[1.19.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.5.0, )"
@@ -64,6 +68,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[7.0.14, 7.0.14]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
