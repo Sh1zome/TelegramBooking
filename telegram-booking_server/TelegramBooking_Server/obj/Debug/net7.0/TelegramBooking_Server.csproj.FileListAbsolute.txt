@@ -31,3 +31,8 @@ D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\obj
 D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\obj\Debug\net7.0\TelegramBooking_Server.pdb
 D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\obj\Debug\net7.0\TelegramBooking_Server.genruntimeconfig.cache
 D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\obj\Debug\net7.0\ref\TelegramBooking_Server.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\TelegramBooking_Server\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll

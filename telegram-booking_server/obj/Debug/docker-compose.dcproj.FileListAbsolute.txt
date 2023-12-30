@@ -5,9 +5,11 @@ D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\appsettings.Development.json
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\appsettings.json
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.exe
-D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.SwaggerGen.dll
-D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.Swagger.dll
-D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\TelegramBooking_Server.pdb
 D:\AlefStudio\TelegramBooking\telegram-booking_server\obj\Debug\docker-compose.dcproj.AssemblyReference.cache
 D:\AlefStudio\TelegramBooking\telegram-booking_server\obj\Debug\docker-compose.dcproj.CopyComplete
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
