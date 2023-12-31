@@ -30,7 +30,6 @@ app.MapPut("/users/{id}", async (int id, Todo inputTodo, TodoDb db) =>
     if (todo is null) return Results.NotFound();
 
     todo.Name = inputTodo.Name;
-    todo.IsComplete = inputTodo.IsComplete;
 
     await db.SaveChangesAsync();
 
