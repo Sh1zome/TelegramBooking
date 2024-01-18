@@ -48,4 +48,47 @@ app.MapDelete("/users/{id}", async (int id, TodoDb db) =>
     return Results.NotFound();
 });
 
+
+app.MapGet("/admins", async (TodoDb db) =>
+    await db.Admins.ToListAsync());
+
+app.MapGet("/Admins/{id}", async (int id, TodoDb db) =>
+    await db.Admins.FindAsync(id)
+        is Admin admin
+            ? Results.Ok(admin)
+            : Results.NotFound());
+
+app.MapPost("/admins", async (Admin admin, TodoDb db) =>
+{
+    db.Admins.Add(admin);
+    await db.SaveChangesAsync();
+
+    return Results.Created($"/admins/{admin.Id}", admin);
+});
+
+app.MapPut("/admins/{id}", async (int id, Admin inputAdmin, TodoDb db) =>
+{
+    var admin = await db.Admins.FindAsync(id);
+
+    if (admin is null) return Results.NotFound();
+
+    admin.Permissions = inputAdmin.Permissions;
+
+    await db.SaveChangesAsync();
+
+    return Results.NoContent();
+});
+
+app.MapDelete("/admins/{id}", async (int id, TodoDb db) =>
+{
+    if (await db.Admins.FindAsync(id) is Admin admin)
+    {
+        db.Admins.Remove(admin);
+        await db.SaveChangesAsync();
+        return Results.NoContent();
+    }
+
+    return Results.NotFound();
+});
+
 app.Run();

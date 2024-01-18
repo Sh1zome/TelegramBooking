@@ -7,4 +7,6 @@ class TodoDb : DbContext
         : base(options) { }
 
     public DbSet<Todo> Todos => Set<Todo>();
+
+    public DbSet<Admin> Admins => Set<Admin>();
 }
