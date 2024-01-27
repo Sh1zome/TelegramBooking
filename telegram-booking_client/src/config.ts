@@ -1,7 +1,8 @@
 import { Injectable } from "@nestjs/common";
 
 const ip : string = 'localhost'
-const port : string = '52437'
+const port : string = '49495'
+const google_api_key : string = 'AIzaSyBzyuuBTJdMpvDH_De_PDQSrsbqf8xAXJo'
 
 @Injectable()
 export class Config {
