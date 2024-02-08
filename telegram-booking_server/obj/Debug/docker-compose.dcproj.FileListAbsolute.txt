@@ -13,3 +13,5 @@ D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.AspNet
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.InMemory.dll
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
 D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\libman.json
+D:\AlefStudio\TelegramBooking\telegram-booking_server\bin\Debug\Microsoft.Data.Sqlite.dll

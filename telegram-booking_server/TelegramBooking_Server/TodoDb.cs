@@ -9,4 +9,6 @@ class TodoDb : DbContext
     public DbSet<Todo> Todos => Set<Todo>();
 
     public DbSet<Admin> Admins => Set<Admin>();
+
+    public DbSet<Queries> queries => Set<Queries>();
 }
