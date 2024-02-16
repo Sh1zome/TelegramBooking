@@ -15,13 +15,16 @@ async function bootstrap() {
 
   bot.start((ctx) => {
     ctx.reply('Welcome', Markup.keyboard([
-      ['Get Users', 'Set Users']
+      ['Get All Users', 'Get 1 User', 'Add 1 User', 'Set User', 'Delete User']
     ]).resize())
     new Users(httpService, ctx).start()
   })
 
-  bot.hears('Get Users', (ctx) => new Users(httpService, ctx).getUsers())
+  bot.hears('Get All Users', (ctx) => new Users(httpService, ctx).getUsers())
+  bot.hears('Get 1 User', (ctx) => new Users(httpService, ctx).getUser())
   bot.hears('Set User', (ctx) => new Users(httpService, ctx).setUser())
+  bot.hears('Add 1 User', (ctx) => new Users(httpService, ctx).addUser())
+  bot.hears('Del User', (ctx) => new Users(httpService, ctx).delUser())
 
   bot.help((ctx) => ctx.reply('Send me a sticker'))
   bot.hears('hi', (ctx) => ctx.reply('Hey there'))

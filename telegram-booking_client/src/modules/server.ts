@@ -15,7 +15,7 @@ export class ServerService {
   @Get()
   async getUsers(): Promise<JSON>{
     var req = await firstValueFrom(this.httpService
-      .get<JSON>(await this.config.getAddress() + '/users', { 
+      .get<JSON>(await this.config.getAddress() + '/GetUsers', { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
@@ -25,10 +25,10 @@ export class ServerService {
   }
 
   @Post()
-  async setUser(id: any, ctx){
+  async addUser(id: any, ctx){
     const userData: Object = {"name":id.toString()}
     await firstValueFrom(this.httpService
-      .get<JSON>(await this.config.getAddress() + '/users', { 
+      .get<JSON>(await this.config.getAddress() + '/GetUsers', { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
@@ -42,7 +42,7 @@ export class ServerService {
           }
           if (empty) {
             var req = await firstValueFrom(this.httpService
-              .post(await this.config.getAddress() + '/users', userData, { 
+              .post(await this.config.getAddress() + '/AddUser' + '?channel_id=\"' + id.toString() + '\"', userData, { 
                 timeout: 5000,
                 httpsAgent: new https.Agent({ rejectUnauthorized: false }),
               })
@@ -54,6 +54,42 @@ export class ServerService {
           }
         })
       ))
+  }
+
+  @Post()
+  async setUser(channel_id: any, id: any, ctx): Promise<JSON>{
+    var req = await firstValueFrom(this.httpService
+      .post<JSON>(await this.config.getAddress() + '/SetUser' + '?channel_id=\"' + channel_id.toString() + '\"&id=' + id, { 
+        timeout: 5000,
+        httpsAgent: new https.Agent({ rejectUnauthorized: false }),
+      }).pipe(
+        map(response => response.data)
+      ))
+    return await req
+  }
+
+  @Post()
+  async delUser(id: any, ctx): Promise<JSON>{
+    var req = await firstValueFrom(this.httpService
+      .post<JSON>(await this.config.getAddress() + '/SetUser' + '?id=\"' + id.toString() + '\"', { 
+        timeout: 5000,
+        httpsAgent: new https.Agent({ rejectUnauthorized: false }),
+      }).pipe(
+        map(response => response.data)
+      ))
+    return await req
+  }
+
+  @Get()
+  async getUser(id: any, ctx): Promise<JSON>{
+    var req = await firstValueFrom(this.httpService
+      .get<JSON>(await this.config.getAddress() + '/GetUsers' + '?id=\"' + id.toString() + '\"', { 
+        timeout: 5000,
+        httpsAgent: new https.Agent({ rejectUnauthorized: false }),
+      }).pipe(
+        map(response => response.data)
+      ))
+    return await req
   }
   
 }
