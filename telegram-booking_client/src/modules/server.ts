@@ -71,7 +71,7 @@ export class ServerService {
   @Post()
   async delUser(id: any, ctx): Promise<JSON>{
     var req = await firstValueFrom(this.httpService
-      .post<JSON>(await this.config.getAddress() + '/SetUser' + '?id=\"' + id.toString() + '\"', { 
+      .post<JSON>(await this.config.getAddress() + '/DelUser' + '?id=\"' + id.toString() + '\"', { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
@@ -83,7 +83,7 @@ export class ServerService {
   @Get()
   async getUser(id: any, ctx): Promise<JSON>{
     var req = await firstValueFrom(this.httpService
-      .get<JSON>(await this.config.getAddress() + '/GetUsers' + '?id=\"' + id.toString() + '\"', { 
+      .get<JSON>(await this.config.getAddress() + '/GetUser' + '?id=\"' + id.toString() + '\"', { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
