@@ -57,9 +57,10 @@ export class ServerService {
   }
 
   @Post()
-  async setUser(channel_id: any, id: any, ctx): Promise<JSON>{
+  async setUser(channel_id: any, id: any, ctx){
+    const userData: Object = {"name":id.toString()}
     var req = await firstValueFrom(this.httpService
-      .post<JSON>(await this.config.getAddress() + '/SetUser' + '?channel_id=\"' + channel_id.toString() + '\"&id=' + id, { 
+      .post(await this.config.getAddress() + '/SetUser' + '?channel_id=\"' + channel_id.toString() + '\"&id=' + id, userData, { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
@@ -69,26 +70,31 @@ export class ServerService {
   }
 
   @Post()
-  async delUser(id: any, ctx): Promise<JSON>{
+  async delUser(id: any, ctx){
+    const userData: Object = {"name":id.toString()}
+    
     var req = await firstValueFrom(this.httpService
-      .post<JSON>(await this.config.getAddress() + '/DelUser' + '?id=\"' + id.toString() + '\"', { 
+      .post(await this.config.getAddress() + '/DelUser' + '?id=' + id.toString(), userData, {
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
-      }).pipe(
-        map(response => response.data)
-      ))
-    return await req
+      })
+      .pipe(
+        map(response => response.data)),
+      );
+
+    return req;
   }
 
   @Get()
   async getUser(id: any, ctx): Promise<JSON>{
     var req = await firstValueFrom(this.httpService
-      .get<JSON>(await this.config.getAddress() + '/GetUser' + '?id=\"' + id.toString() + '\"', { 
+      .get<JSON>(await this.config.getAddress() + '/GetUser' + '?id=' + id.toString(), { 
         timeout: 5000,
         httpsAgent: new https.Agent({ rejectUnauthorized: false }),
       }).pipe(
         map(response => response.data)
       ))
+      
     return await req
   }
   

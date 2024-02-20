@@ -10,7 +10,7 @@ var DB = new Queries(new DB());
 DB.Init();
 
 
-app.MapGet("/users", async (TodoDb db) =>
+app.MapGet("/users", async (TodoDb db) => 
     await db.Todos.ToListAsync());
 
 app.MapGet("/users/{id}", async (int id, TodoDb db) =>
